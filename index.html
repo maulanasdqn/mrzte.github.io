@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://unpkg.com/vue@3"></script>
+    <title>Maulana | Profile</title>
+  </head>
+  <body>
+    <div id="app">
+      <nav class="navbar">
+        <div class="navbar-wrapper">
+          <div class="navbar-logo">
+            <h1 class="navbar-logo-text">{{ name }}</h1>
+          </div>
+        </div>
+        <div class="navbar-wrapper">
+          <ul v-for="(nav, i) in navbar" :key="i" class="navbar-text">
+            <li class="navbar-link">{{nav.name}}</li>
+          </ul>
+        </div>
+      </nav>
+      <header class="header">
+        <div class="header-banner">
+          <div class="header-banner-text-wrapper">
+            <h1 class="header-banner-text">
+              {{welcome}}
+              <br />
+              <span class="header-banner-sub-text">
+                {{greeting}} <span class="name"> {{name}} </span> {{role}}</span
+              >
+            </h1>
+            <div class="header-banner-button-wrapper">
+              <button class="header-button button-primary">Download CV</button>
+              <button class="header-button button-secondary">GitHub</button>
+            </div>
+          </div>
+          <div class="header-banner-images-wrapper">
+            <img
+              class="header-banner-images"
+              src="./assets/img/me.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </header>
+      <main class="main"></main>
+      <footer class="footter"></footer>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

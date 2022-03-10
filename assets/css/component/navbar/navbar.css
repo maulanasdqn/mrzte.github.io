@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  z-index: 50;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  background-color: var(--red-200);
+  color: white;
+}
+
+.navbar-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-text {
+  display: flex;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.navbar-link {
+  border: var(--red-200) 2px solid;
+  padding: 0.5rem;
+}
+
+.navbar-link:hover {
+  border: aliceblue 2px solid;
+  border-radius: 10px;
+}
