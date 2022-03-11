@@ -24,7 +24,21 @@
   padding: 0.5rem;
 }
 
+.menu {
+  display: none;
+}
+
 .navbar-link:hover {
   border: aliceblue 2px solid;
   border-radius: 10px;
+}
+
+.navbar-wrapper-mobile {
+  display: none;
+}
+
+.navbar-text-mobile {
+  display: flex;
+  flex-direction: column;
+  border: none;
 }

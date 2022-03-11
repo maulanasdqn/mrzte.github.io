@@ -22,7 +22,7 @@
 
 .header-banner-text {
   color: black;
-  font-size: clamp(30px, 40px, 60px);
+  font-size: clamp(30px, 90px, 120px);
   animation-name: header-text;
   animation-duration: 20s;
 }
@@ -73,12 +73,12 @@
 }
 
 .header-banner-images {
-  border-radius: 6%;
+  border-radius: 10px;
   filter: drop-shadow(30px 10px 4px #0000);
   animation-name: header-images;
   animation-duration: 3s;
   animation-iteration-count: infinite;
-  width: clamp(200px, 800px, 800px);
+  width: clamp(200px, 1200px, 800px);
 }
 
 .header-banner-button-wrapper {
@@ -108,4 +108,53 @@
 
 .button-secondary {
   background-color: var(--blue-100);
+}
+
+@media only screen and (max-width: 1400px) {
+  .header-banner-images {
+    width: clamp(200px, 600px, 800px);
+  }
+  .header-banner-text {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header-banner-images {
+    width: clamp(200px, 400px, 800px);
+  }
+  .header-banner-text {
+    font-size: 4rem;
+  }
+
+  .header-banner {
+    display: flex;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    flex-direction: column;
+  }
+
+  .navbar-text {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .navbar-wrapper-mobile {
+    display: flex;
+    z-index: 50;
+    position: absolute;
+    right: 0;
+    top: 10;
+    left: 3;
+    color: white;
+    flex-direction: column;
+    justify-content: end;
+    background-color: rgb(133, 38, 38);
+    padding: 1em;
+    border-radius: 10px;
+    gap: 10px;
+  }
 }
